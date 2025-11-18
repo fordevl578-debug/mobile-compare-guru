@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mobile Compare Guru</title>
+  <meta name="description" content="Mobile Compare Guru — Fast, simple mobile comparisons and reviews." />
+  <meta property="og:title" content="Mobile Compare Guru" />
+  <meta property="og:description" content="Compare phones fast. Specs, pros & cons, and quick recommendations." />
+  <meta property="og:image" content="https://source.unsplash.com/collection/190727/1200x630" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#">Mobile Compare Guru</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav id="mainNav" class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Compare</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — I help you compare phones fast</h1>
+        <p class="lead">Simple, modern comparisons with specs, pros & cons, and a short recommendation.</p>
+        <a class="btn primary" href="#projects">View Comparisons</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Latest Comparisons</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://source.unsplash.com/featured/?smartphone,1" alt="Phone 1">
+          <h3>Phone A vs Phone B</h3>
+          <p>Quick verdict: Phone A for camera, Phone B for battery.</p>
+          <a class="btn" href="#contact">Read More</a>
+        </article>
+        <article class="card">
+          <img src="https://source.unsplash.com/featured/?smartphone,2" alt="Phone 2">
+          <h3>Phone C vs Phone D</h3>
+          <p>Quick verdict: Phone C better value, Phone D premium screen.</p>
+          <a class="btn" href="#contact">Read More</a>
+        </article>
+        <article class="card">
+          <img src="https://source.unsplash.com/featured/?smartphone,3" alt="Phone 3">
+          <h3>Budget vs Midrange</h3>
+          <p>Which to choose depending on your budget and needs.</p>
+          <a class="btn" href="#contact">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>Mobile Compare Guru — short, clear phone comparisons that help you pick the right phone quickly. Built with simple HTML/CSS/JS and optimized for mobile.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact / Request a Comparison</h2>
+      <!-- Replace YOUR_FORMSPREE_ID with your real Formspree id after signup -->
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">Which phones should we compare?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button class="btn primary" type="submit">Send Request</button>
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mobile Compare Guru — Built for mobile.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
