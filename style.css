@@ -1,0 +1,41 @@
+:root{
+  --bg: #F8FAFC;
+  --primary: #2563EB;
+  --dark: #0F172A;
+  --accent: #10B981;
+  --muted: #64748B;
+  --max-width: 1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--dark);-webkit-font-smoothing:antialiased}
+.container{width:94%;max-width:var(--max-width);margin:0 auto}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-family:Poppins,Inter;font-weight:700;color:var(--dark);text-decoration:none}
+.nav{display:none;gap:12px}
+.nav a{color:var(--dark);text-decoration:none;padding:8px;border-radius:6px}
+.nav a:hover{background:rgba(37,99,235,0.08)}
+.nav-toggle{background:none;border:0;font-size:20px}
+.hero{padding:36px 0;text-align:left}
+.hero-inner h1{font-family:Poppins,Inter;font-size:26px;margin:0 0 8px}
+.lead{color:var(--muted);margin-bottom:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;background:#e6eefc;color:var(--primary);border:1px solid rgba(37,99,235,0.12)}
+.btn.primary{background:var(--primary);color:#fff;border:none}
+.projects{padding:22px 0}
+.projects h2{margin:0 0 12px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 18px rgba(2,6,23,0.06);padding-bottom:12px}
+.card img{width:100%;height:150px;object-fit:cover;display:block}
+.card h3{margin:10px 12px 6px;font-size:16px}
+.card p{margin:0 12px 10px;color:var(--muted);font-size:14px}
+.about, .contact{padding:18px 0}
+label{display:block;margin:8px 0 4px;font-size:13px}
+input,textarea{width:100%;padding:10px;border:1px solid #e6eefc;border-radius:8px;background:#fff}
+.form-msg{margin-top:8px;color:var(--accent)}
+.site-footer{padding:14px 0;color:var(--muted);font-size:14px}
+@media(min-width:700px){
+  .nav{display:flex}
+  .nav-toggle{display:none}
+  .hero-inner h1{font-size:36px}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .card img{height:160px}
+}
